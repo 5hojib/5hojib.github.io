@@ -1,16 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Dosument</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --accent: #924642;
+            --bg: #fcedea;
+        }
+
+        .container1 {
+            width: 100%;
+            height: 100vh;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: var(--bg);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .title {
+            margin-left: 20px;
+            font-weight: bold;
+
+        }
+
+        .menu-icon {
+            width: 25px;
+            cursor: pointer;
+            display: block;
+            margin-right: 5px;
+            transition: .2s;
+        }
+
+        .menu-icon:hover {
+            width: 30px;
+        }
+
+        #menuList {
+            animation: fadeInGirl .2s linear;
+            background-color: transparent;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            transition: 0.1s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: var(--accent);
+            padding: 10px;
+            border-radius: 60px;
+        }
+
+        .content {
+            position: relative;
+            height: 100%;
+            left: 50%;
+            top: 8%;
+            overflow: hidden;
+            display: flex;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+        }
+
+        .variant {
+            justify-content: center;
+            width: 100%;
+            margin-right: 50px;
+            margin-left: 50px;
+
+        }
+
+        .variant img {
+            animation: fadeVariant .9s linear;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        @keyframes fadeVariant {
+            0% {
+                opacity: 0;
+                margin-top: -20px;
+                background-color: transparent;
+            }
+
+            100% {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+
+        @keyframes fadeInGirl {
+            0% {
+                opacity: 0;
+                margin-right: -30px;
+                background-color: transparent;
+            }
+
+            100% {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+
+        .variant h3 {
+            animation: fadeTitle .9s;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .variant p {
+            animation: fadeDesc .9s;
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .variant button {
+            background-color: var(--accent);
+            color: white;
+            margin-top: 20px;
+            position: relative;
+            left: 50%;
+            letter-spacing: 1px;
+            border: none;
+            transform: translateX(-50%);
+            padding: 10px 15px;
+            border-radius: 60px;
+            transition: .2s ease-in-out;
+        }
+
+        .variant button:hover {
+            border-radius: 8px;
+        }
+
+        @keyframes fadeTitle {
+            0% {
+                opacity: 0;
+                margin-top: -20px;
+                background-color: transparent;
+            }
+
+            100% {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+
+        @keyframes fadeDesc {
+            0% {
+                opacity: 0;
+                margin-top: 70px;
+                background-color: transparent;
+            }
+
+            100% {
+                opacity: 1;
+                background-color: transparent;
+            }
+        }
+
+
+        .container2 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        @media only screen and (max-width:700px) {
+            .container1 {
+                width: 100%;
+                height: auto;
+                padding-bottom: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: var(--bg);
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            nav ul {
+                position: absolute;
+                top: 65px;
+                transition: .5s;
+                z-index: 2;
+                right: 0;
+                display: none;
+                width: 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                overflow: scroll;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+            }
+
+            .variant {
+                justify-content: center;
+                width: 100%;
+                margin-top: 70px;
+                margin-right: 0px;
+                margin-left: 0px;
+
+            }
+
+            .variant img {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+            }
+
+            .variant img:hover {
+                width: 85%;
+            }
+
+            .variant h3 {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .variant p {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
+
+
+        .msg {
+            position: absolute;
+            visibility: hidden;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            top: 0%;
+            left: 50%;
+        }
+
+        .cntnt {
+            position: absolute;
+            text-align: center;
+            width: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+        }
+
+        .cntnt h2 {
+            flex: 1;
+        }
+
+        .msg p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            text-align: center;
+            width: 20%;
+            margin-top: 40px;
+        }
+    </style>
+    <link rel="icon" href="drawable/logo.png">
     <script src="js/script.js"></script>
-    <title>KaeruShi Product</title>
 </head>
+
 <body>
-    <div class="container">
-        <!--Navbar-->
+    <div class="container1">
         <div class="navbar">
             <img src="drawable/logo.png" alt="logo" class="logo">
             <p class="title">Weeabooify</p>
@@ -24,30 +344,42 @@
             </nav>
             <img src="drawable/menu.svg" alt="logo" class="menu-icon" onclick="togglemenu()">
         </div>
-        <!--Content-->
         <div class="content">
-            <div class="heading">
-                <h3>Coming Soon!</h2>
-                <p>Substratum Theme</p>
-                <div class="social">
-                    <a href="https://t.me/kaerushi">
-                        <img src="drawable/Tele.svg" alt="telegram">
-                    </a>
-                    <a href="https://instagram.com/kaerushi_">
-                        <img src="drawable/insta.svg" alt="instagram">
-                    </a>
-                    <a href="https://twitter.com/kaerushi1">
-                        <img src="drawable/Twit.svg" alt="twitter">
-                    </a>
-                    <a href="https://facebook.com/farel.user002">
-                        <img src="drawable/fb.svg" alt="facebook">
-                    </a>
+            <div class="variant">
+                <div class="uwu">
+                    <img src="drawable/uwu.png" alt="test">
+                    <h3>Weeabooify UwU</h3>
+                    <p>Weeabooify variant adalah tema substatum dengan gaya material design, support untuk Android Q</p>
+                    <button>Preview</button>
                 </div>
             </div>
-            <div class="body">
-                <img src="drawable/girl.png" alt="girl" class="girl">
+            <div class="variant">
+                <div class="sc">
+                    <img src="drawable/sc.png" alt="test">
+                    <h3>Weeabooify Schicksal</h3>
+                    <p>Weeabooify variant adalah tema substatum dengan gaya material design, support untuk Android Q</p>
+                    <button>Preview</button>
+                </div>
+            </div>
+            <div class="variant">
+                <div class="ae">
+                    <img src="drawable/ae.png" alt="test">
+                    <h3>Weeabooify Anti-Entropy</h3>
+                    <p>Weeabooify variant adalah tema substatum dengan gaya material design, support untuk Android Q</p>
+                    <button>Preview</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="overlay">
+            <div class="msg">
+                <div class="cntnt">
+                    <h2>Previews</h2>
+                    <a href="#">&times;</a>
+                </div>
+                <p>Coming Sooon!</p>
             </div>
         </div>
     </div>
 </body>
+
 </html>
