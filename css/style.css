@@ -3,6 +3,12 @@
     padding: 0;
     font-family: sans-serif;
     -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 :root {
@@ -52,7 +58,7 @@
 }
 
 #menuList {
-    animation: fadeInGirl .2s linear;
+    animation: fadeInGirl .5s linear;
     background-color: transparent;
 }
 
@@ -128,7 +134,8 @@ nav ul li a:hover {
         margin-left: -50px;
         background-color: transparent;
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-color: transparent;
     }
@@ -140,7 +147,8 @@ nav ul li a:hover {
         margin-left: 50px;
         background-color: transparent;
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-color: transparent;
     }
@@ -173,7 +181,8 @@ nav ul li a:hover {
         margin-left: 50px;
         background-color: transparent;
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-color: transparent;
     }
@@ -187,7 +196,7 @@ nav ul li a:hover {
 }
 
 .girl {
-    
+
     animation: fadeInGirl .5s linear;
     justify-content: end;
     display: block;
@@ -206,7 +215,8 @@ nav ul li a:hover {
         margin-right: -30px;
         background-color: transparent;
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-color: transparent;
     }
@@ -232,7 +242,7 @@ nav ul li a:hover {
         display: block;
         margin-right: 20px;
     }
-    
+
     nav ul {
         position: absolute;
         top: 65px;
@@ -245,7 +255,7 @@ nav ul li a:hover {
 
     nav ul li {
         display: block;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 10px;
     }
 
@@ -260,17 +270,18 @@ nav ul li a:hover {
     }
 
     .heading {
-        right: 3px;
+        right: 0px;
         width: 100%;
         text-align: center;
         margin-left: 0px;
+        margin-right: 0px;
     }
 
     .heading h2 {
         animation: fadeIn .5s linear;
         font-size: 42px;
     }
-    
+
     .heading h3 {
         animation: fadeIn .5s linear;
         margin-top: -5px;
@@ -278,13 +289,15 @@ nav ul li a:hover {
     }
 
     .heading p {
+        display: inline-block;
+        text-align: left;
         animation: fadeInP .5s linear;
         font-size: 16px;
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
 
     .social {
         justify-content: center;
@@ -309,7 +322,8 @@ nav ul li a:hover {
             margin-right: 30px;
             background-color: transparent;
         }
-        100%{
+
+        100% {
             opacity: 1;
             background-color: transparent;
         }
@@ -338,7 +352,7 @@ nav ul li a:hover {
 
 /**Tablet**/
 @media (min-width:641px) {
-    
+
     /* CSS */
     .heading {
         right: 3px;
@@ -351,7 +365,7 @@ nav ul li a:hover {
         animation: fadeIn .5s linear;
         font-size: 46px;
     }
-    
+
     .heading h3 {
         animation: fadeIn .5s linear;
         margin-top: -5px;
@@ -365,7 +379,7 @@ nav ul li a:hover {
     }
 
     .girl {
-    
+
         animation: fadeInGirl .5s linear;
         justify-content: end;
         display: block;
@@ -373,7 +387,7 @@ nav ul li a:hover {
         width: 95%;
         transition: .2s;
     }
-    
+
     .girl:hover {
         width: 100%;
     }
@@ -381,7 +395,7 @@ nav ul li a:hover {
 
 /**Desktop**/
 @media (min-width:1281px) {
-    
+
     /* CSS */
     .heading {
         right: 3px;
@@ -394,7 +408,7 @@ nav ul li a:hover {
         animation: fadeIn .5s linear;
         font-size: 46px;
     }
-    
+
     .heading h3 {
         animation: fadeIn .5s linear;
         margin-top: -5px;
@@ -408,7 +422,7 @@ nav ul li a:hover {
     }
 
     .girl {
-    
+
         animation: fadeInGirl .5s linear;
         justify-content: end;
         display: block;
@@ -416,7 +430,7 @@ nav ul li a:hover {
         width: 135%;
         transition: .2s;
     }
-    
+
     .girl:hover {
         width: 140%;
     }
