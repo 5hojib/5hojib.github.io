@@ -295,6 +295,112 @@
             }
         }
 
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .container1 {
+                width: 100%;
+                height: auto;
+                padding-bottom: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: var(--bg);
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+
+            .logo {
+                width: 80px;
+            }
+
+            .menu-icon {
+                width: 30px;
+            }
+
+            .menu-icon:hover {
+                width: 35PX;
+            }
+
+            .title {
+                font-size: 24px;
+            }
+
+            nav ul {
+                position: absolute;
+                top: 65px;
+                transition: .5s;
+                z-index: 2;
+                right: 0;
+                display: none;
+                width: 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                color: black;
+                font-weight: bold;
+                font-size: 24px;
+                text-decoration: none;
+                transition: 0.1s ease-in-out;
+            }
+
+            #menuList {
+                animation: fadeInGirl .2s linear;
+                background-color: transparent;
+            }
+
+            .content {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                overflow: scroll;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+            }
+
+            .variant {
+                justify-content: center;
+                width: 100%;
+                margin-top: 70px;
+                margin-right: 0px;
+                margin-left: 0px;
+
+            }
+
+            .variant img {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+            }
+
+            .variant img:hover {
+                width: 85%;
+            }
+
+            .variant h3 {
+                font-size: 28px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .variant p {
+                text-align: center;
+                margin-top: 15px;
+                font-size: 26px;
+            }
+
+            .variant button {
+                font-size: 22px;
+                padding: 15px 20px;
+            }
+        }
 
         .msg {
             position: absolute;
