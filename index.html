@@ -5,54 +5,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="drawable/logo.png">
-    <script src="js/script.js"></script>
-    <title>KaeruShi Home</title>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>KaeruShi</title>
 </head>
 
 <body>
-    <div class="container">
-        <!--Navbar-->
-        <div class="navbar">
-            <img src="drawable/logo.png" alt="logo" class="logo">
-            <p class="title">Weeabooify</p>
-            <nav>
-                <ul id="menuList">
-                    <li><a href="#">home</a></li>
-                    <li><a href="product.html">product</a></li>
-                    <li><a href="comis.html">commission</a></li>
-                    <li><a href="about.html">about</a></li>
+    <section>
+        <div class="container" id="home">
+            <nav id="navbar">
+                <div class="logo">
+                    <img src="drawable/logo.png" alt="" class="logo-icon">
+                    <p>Weeabooify</p>
+                </div>
+                <div class="over"></div>
+                <div class="btnNav" onclick="togglemenu()">
+                    <img src="drawable/menu.svg" alt="" class="menu" id="menuBtn">
+                </div>
+                <ul id="myTab">
+                    <li><a href="#home" class="links">home</a></li>
+                    <li><a href="#product" class="links">product</a></li>
+                    <li><a href="#commis" class="links">commissions</a></li>
+                    <li><a href="#about" class="links">about</a></li>
                 </ul>
             </nav>
-            <img src="drawable/menu.svg" alt="logo" class="menu-icon" onclick="togglemenu()">
+
+            <!-- =====Home Container===== -->
+            <div class="home-content">
+                <div class="heading">
+                    <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="hello">Hello!</h2>
+                    <h3 data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000" class="name">I'm
+                        <span>KaeruShi</span>
+                    </h3>
+                    <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="desc">Welcome to my
+                        cozy
+                        indie website  🍂</p>
+                    <div class="social">
+                        <a href="https://t.me/kaerushi" data-aos="fade-left" data-aos-delay="300"
+                            data-aos-duration="1500">
+                            <img src="drawable/Tele.svg" alt="telegram">
+                        </a>
+                        <a href="https://instagram.com/kaerushi_" data-aos="fade-left" data-aos-delay="500"
+                            data-aos-duration="1500">
+                            <img src="drawable/insta.svg" alt="instagram">
+                        </a>
+                        <a href="https://twitter.com/kaerushi1" data-aos="fade-left" data-aos-delay="700"
+                            data-aos-duration="1500">
+                            <img src="drawable/Twit.svg" alt="twitter">
+                        </a>
+                        <a href="https://facebook.com/farel.user002" data-aos="fade-left" data-aos-delay="900"
+                            data-aos-duration="1500">
+                            <img src="drawable/fb.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+                <img src="drawable/girl.png" alt="girl" class="girl">
+            </div>
         </div>
-        <!--Content-->
-        <div class="content">
+    </section>
+
+    <!-- =====Product Container===== -->
+    <section>
+        <div class="product-content" id="product">
+            <div class="uwu reveal">
+                <img src="drawable/uwu.png" alt="UwU" class="sub-logo">
+                <div class="content">
+                    <h2>Weeabooify UwU</h2>
+                    <p>Weeabooify UwU is Free Version theme, the overlays are limited. Only support for Android Q,
+                        especially for Nusantara Project and Resurrection Remix.</p>
+                    <button><a style="text-decoration: none; color: white"
+                            href="https://t.me/weeabooify/175">Download</a></button>
+                </div>
+            </div>
+            <div class="sc reveal">
+                <div class="content">
+                    <h2>Weeabooify Schicksal</h2>
+                    <p>Weeabooify Schicksal is a substratum theme designed in material design style and anime style,
+                        include QS Panel, Lockscreen, Settings, etc. Support for Android Q.</p>
+                    <button><a style="text-decoration: none; color: white" href="https://t.me/weeabooify/175">Buy
+                            Theme</a></button>
+                </div>
+                <img src="drawable/sc.png" alt="Schicksal" class="sub-logo">
+            </div>
+            <div class="ae reveal">
+                <img src="drawable/ae.png" alt="Anti-Entropy" class="sub-logo">
+                <div class="content">
+                    <h2>Weeabooify Anti-Entropy</h2>
+                    <p>Weeabooify Anti-Entropy is a substratum theme designed for Android 12 above which include
+                        Lockscreen, QS Shape, Third-party apps, etc.</p>
+                    <button><a style="text-decoration: none; color: white" href="https://t.me/weeabooify/175">Buy
+                            Theme</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commissions Container  -->
+    <section>
+        <div class="commis-content" id="commis">
             <div class="heading">
-                <h2>Hello!</h2>
-                <h3>I'm KaeruShi</h3>
-                <p>Welcome to my cozy indie website  🍂</p>
+                <h3 data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000" class="name">Coming
+                    <span>Soon!</span>
+                </h3>
+                <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="desc">Illustration
+                    Commissions  🎨</p>
                 <div class="social">
-                    <a href="https://t.me/kaerushi">
+                    <a href="https://t.me/kaerushi" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
                         <img src="drawable/Tele.svg" alt="telegram">
                     </a>
-                    <a href="https://instagram.com/kaerushi_">
+                    <a href="https://instagram.com/kaerushi_" data-aos="fade-left" data-aos-delay="500"
+                        data-aos-duration="1500">
                         <img src="drawable/insta.svg" alt="instagram">
                     </a>
-                    <a href="https://twitter.com/kaerushi1">
+                    <a href="https://twitter.com/kaerushi1" data-aos="fade-left" data-aos-delay="700"
+                        data-aos-duration="1500">
                         <img src="drawable/Twit.svg" alt="twitter">
                     </a>
-                    <a href="https://facebook.com/farel.user002">
+                    <a href="https://facebook.com/farel.user002" data-aos="fade-left" data-aos-delay="900"
+                        data-aos-duration="1500">
                         <img src="drawable/fb.svg" alt="facebook">
                     </a>
                 </div>
             </div>
-            <div class="body">
-                <img src="drawable/girl.png" alt="girl" class="girl">
-            </div>
+            <img src="drawable/girl.png" alt="girl" class="girl" data-aos="fade-down" data-aos-delay="500"
+                data-aos-duration="1000">
         </div>
-    </div>
+    </section>
+
+    <!-- =====About Container===== -->
+    <section>
+        <div class="about-content" id="about">
+            <div class="heading">
+                <h3 data-aos="fade-down" data-aos-delay="250" data-aos-duration="1000" class="name">About
+                    <span>Me</span>
+                </h3>
+                <p data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" class="desc">Hello everyone! My
+                    name is Farel Ardiansyah, I live in Central Java, Indonesia. My hobby is programming and making some
+                    cozy stuff like drawing and theming.</p>
+                <div class="social">
+                    <a href="https://t.me/kaerushi" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                        <img src="drawable/Tele.svg" alt="telegram">
+                    </a>
+                    <a href="https://instagram.com/kaerushi_" data-aos="fade-left" data-aos-delay="500"
+                        data-aos-duration="1500">
+                        <img src="drawable/insta.svg" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/kaerushi1" data-aos="fade-left" data-aos-delay="700"
+                        data-aos-duration="1500">
+                        <img src="drawable/Twit.svg" alt="twitter">
+                    </a>
+                    <a href="https://facebook.com/farel.user002" data-aos="fade-left" data-aos-delay="900"
+                        data-aos-duration="1500">
+                        <img src="drawable/fb.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <img src="drawable/girl.png" alt="girl" class="girl" data-aos="fade-down" data-aos-delay="500"
+                data-aos-duration="1000">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Show Shadow NavBar
+        var navBar = document.getElementById('navbar');
+        window.onscroll = function () {
+            if (window.scrollY > 22) {
+                navBar.classList.add('float');
+            } else {
+                navBar.classList.remove('float');
+            }
+        };
+
+        // Scroll Animation
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i, reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 50;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        // Selected Menu
+        const li = document.querySelectorAll(".links");
+        const sec = document.querySelectorAll("section");
+
+        function activeMenu() {
+            let len = sec.length;
+            while (--len && window.scrollY + 200 < sec[len].offsetTop) { }
+            li.forEach(ltx => ltx.classList.remove("selected"));
+            li[len].classList.add("selected");
+        }
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+
+        // Menu Button
+        function togglemenu() {
+            var menutab = document.getElementById('myTab');
+            if (menutab.classList.contains("show")) { // if is menuBox displayed, hide it
+                menutab.classList.remove("show");
+            }
+            else { // if is menuBox hidden, display it
+                menutab.classList.add("show");
+            }
+        }
+    </script>
 </body>
 
 </html>
