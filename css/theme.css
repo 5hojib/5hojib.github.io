@@ -350,6 +350,7 @@ nav .menu {
 
 /* =====About Content===== */
 .about-content {
+    position:relative;
     padding-top: 5%;
     width: 100%;
     height: 100vh;
