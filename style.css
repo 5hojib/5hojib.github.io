@@ -492,8 +492,8 @@ body {
     }
 
     ul li a:hover {
-        color: white;
-        background-color: var(--accent);
+        color: black;
+        background-color: transparent;
         border-radius: 60px;
     }
 
