@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="styles/theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="drawable/logo.png">
     <title>KaeruShi</title>
 </head>
 
@@ -15,13 +14,10 @@
     <section>
         <div class="container" id="home">
             <nav id="navbar">
-                <div class="logo">
+                <div class="header">
                     <img src="drawable/logo.png" alt="" class="logo-icon">
                     <p>Weeabooify</p>
-                </div>
-                <div class="over"></div>
-                <div class="btnNav" onclick="togglemenu()">
-                    <img src="drawable/menu.svg" alt="" class="menu" id="menuBtn">
+                    <img src="drawable/menu.svg" alt="" class="menu" id="menuBtn" onclick="togglemenu()">
                 </div>
                 <ul id="myTab">
                     <li><a href="#home" class="links">home</a></li>
@@ -78,6 +74,7 @@
                             href="https://t.me/weeabooify/175">Download</a></button>
                 </div>
             </div>
+
             <div class="sc reveal">
                 <div class="content">
                     <h2>Weeabooify Schicksal</h2>
@@ -166,61 +163,14 @@
         </div>
     </section>
 
+    <!-- Footer Container -->
+    <footer>
+        <h2>Weeabooify</h2>
+        <h3>© 2022 Kaerushi</h3>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-
-        // Show Shadow NavBar
-        var navBar = document.getElementById('navbar');
-        window.onscroll = function () {
-            if (window.scrollY > 22) {
-                navBar.classList.add('float');
-            } else {
-                navBar.classList.remove('float');
-            }
-        };
-
-        // Scroll Animation
-        window.addEventListener('scroll', reveal);
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-            for (var i = 0; i, reveals.length; i++) {
-                var windowheight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 50;
-
-                if (revealtop < windowheight - revealpoint) {
-                    reveals[i].classList.add('active');
-                } else {
-                    reveals[i].classList.remove('active');
-                }
-            }
-        }
-
-        // Selected Menu
-        const li = document.querySelectorAll(".links");
-        const sec = document.querySelectorAll("section");
-
-        function activeMenu() {
-            let len = sec.length;
-            while (--len && window.scrollY + 200 < sec[len].offsetTop) { }
-            li.forEach(ltx => ltx.classList.remove("selected"));
-            li[len].classList.add("selected");
-        }
-        activeMenu();
-        window.addEventListener("scroll", activeMenu);
-
-        // Menu Button
-        function togglemenu() {
-            var menutab = document.getElementById('myTab');
-            if (menutab.classList.contains("show")) { // if is menuBox displayed, hide it
-                menutab.classList.remove("show");
-            }
-            else { // if is menuBox hidden, display it
-                menutab.classList.add("show");
-            }
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
