@@ -82,6 +82,7 @@
     user-select: none;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -357,7 +358,7 @@ body {
     }
 
 /* Mobile */
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:480px) {
 
     /* FRAMEWORK */
     .container {
