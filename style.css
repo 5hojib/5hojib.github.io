@@ -372,8 +372,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-inline: 8%;
-    }
+        padding-inline: 0%;
+    padding-left: 30px;
+
+    padding-right: 35px;    }
 
     .heading h2 {
         font-size: 40px;
