@@ -388,6 +388,7 @@ nav .menu {
 
     /* Navigation Header */
     #navbar {
+        overflow-x: hidden;
         height: 4rem;
         align-items: center;
     }
