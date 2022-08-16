@@ -333,6 +333,11 @@ ul li a:hover {
 
 .product-content .sub-logo {
     width: 35%;
+    transition: .3s;
+}
+
+.sub-logo:hover {
+    transform: scale(105%);
 }
 
 /* UwU */
