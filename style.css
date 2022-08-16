@@ -670,7 +670,7 @@ footer h2 {
         background-color: var(--background-neutral);
     }
 
-    footer h2 {
-        font-size: 22px;
+    footer h3 {
+        font-size: 16px;
     }
 }
